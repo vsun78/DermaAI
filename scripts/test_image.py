@@ -1,0 +1,31 @@
+﻿from ultralytics import YOLO
+import cv2
+
+# Load your trained classification model
+model = YOLO(r'C:/Users/ontar/runs/classify/train2/weights/best.pt')
+
+
+# Path to the image you want to test
+image_path = r"C:/Users/ontar/PycharmProjects/ObjectDetection/images/train/melanomaTest2.jpg"
+
+
+
+# Run prediction
+results = model(image_path)
+
+# Get top prediction
+top1_idx = results[0].probs.top1
+class_name = results[0].names[top1_idx]
+confidence = results[0].probs.data[top1_idx].item()
+
+# Print results
+print(f'Predicted class: {class_name}')
+print(f'Confidence: {confidence:.2f}')
+
+# OPTIONAL: Show image with prediction
+img = cv2.imread(image_path)
+label = f"{class_name} ({confidence:.2f})"
+cv2.putText(img, label, (10, 40), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 255, 0), 2)
+cv2.imshow("Prediction", img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()

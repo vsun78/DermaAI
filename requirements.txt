@@ -1,0 +1,32 @@
+# Backend Dependencies for Melanoma Detection System
+
+# Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# YOLO
+ultralytics>=8.0.0
+
+# Computer Vision
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# API Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Utilities
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+
+# Optional: For better performance
+# onnx>=1.14.0
+# onnxruntime>=1.16.0
+
+
+

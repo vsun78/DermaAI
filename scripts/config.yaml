@@ -1,0 +1,8 @@
+﻿path: C:\Users\ontar\PycharmProjects\ObjectDetection # path to train and image
+train: images/train # images to trian (relative to path)
+val: images # val images (relative to path)
+
+#Classes
+names:
+  0: melanoma # we only have one class in this case
+  1: noMelanoma # alright now we have 2
