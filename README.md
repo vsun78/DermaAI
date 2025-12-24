@@ -178,7 +178,7 @@ Get information about the loaded model.
   - **E**volving characteristics
 - Medical recommendations
 
-## 🔬 Technical Details
+## Technical Details
 
 ### Model Training Approach
 
@@ -200,7 +200,7 @@ Get information about the loaded model.
 - ABCDE dermatological criteria analysis
 - Confidence calibration for reliable predictions
 
-## 🛠️ Development
+## Development
 
 ### Project Structure
 ```
