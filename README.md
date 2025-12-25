@@ -9,6 +9,12 @@ An intelligent skin cancer detection system using deep learning to classify mela
 
 ## Overview
 
+
+
+https://github.com/user-attachments/assets/9822679a-0720-4749-afcb-66ca36201867
+
+
+
 This project implements an end-to-end medical AI system for melanoma detection, achieving >95% accuracy on validation data. The system provides:
 
 - **Real-time classification** of skin lesions as melanoma or benign
